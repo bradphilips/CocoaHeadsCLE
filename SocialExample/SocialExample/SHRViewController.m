@@ -7,6 +7,7 @@
 //
 
 #import "SHRViewController.h"
+#import "SHRTimelineViewController.h"
 
 #import <Social/Social.h>
 
@@ -31,6 +32,14 @@
 
 #pragma mark - View Lifecycle 
 
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Timeline"
+                                                                            style:UIBarButtonItemStyleBordered
+                                                                           target:self
+                                                                           action:@selector(timelineTapped:)];
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
   UITouch *touch = [[event allTouches] anyObject];
   if ([self.messageText isFirstResponder] && (self.messageText != touch.view)) {
@@ -38,6 +47,11 @@
   }
 }
 #pragma mark - Actions
+
+- (IBAction)timelineTapped:(id)sender {
+  SHRTimelineViewController *timeline = [[SHRTimelineViewController alloc] init];
+  [self.navigationController pushViewController:timeline animated:YES];
+}
 
 - (IBAction)facebookShareTapped:(id)sender {
   [self presentShareDialogForServiceType:SLServiceTypeFacebook];
