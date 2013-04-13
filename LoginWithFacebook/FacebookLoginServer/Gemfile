@@ -18,6 +18,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'responders'
 gem 'thin'
 gem 'jquery-rails'
 gem 'authlogic'

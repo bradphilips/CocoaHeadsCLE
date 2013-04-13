@@ -1,6 +1,5 @@
 class UserSessionController < ApplicationController
 
-  respond_to :xml, :json
   #Filters
   before_filter :require_no_user, :only => [:create]
   before_filter :require_user, :only => [:destroy]
