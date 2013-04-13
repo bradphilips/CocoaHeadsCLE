@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D57867C2CA24BF9AC7EC105 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC2BDA6D404762B6D3077C /* libPods.a */; };
+		A762A1DF1719B12C00CC4668 /* FBLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1DE1719B12C00CC4668 /* FBLMainViewController.m */; };
+		A762A2021719B19E00CC4668 /* MXNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E31719B19E00CC4668 /* MXNModel.m */; };
+		A762A2031719B19E00CC4668 /* MXNLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */; };
+		A762A2041719B19E00CC4668 /* MXNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E71719B19E00CC4668 /* MXNUser.m */; };
+		A762A2051719B19E00CC4668 /* MXNBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1EB1719B19E00CC4668 /* MXNBaseService.m */; };
+		A762A2061719B19E00CC4668 /* MXNLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1ED1719B19E00CC4668 /* MXNLoginService.m */; };
+		A762A2071719B19E00CC4668 /* PageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F11719B19E00CC4668 /* PageCell.m */; };
+		A762A2081719B19E00CC4668 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F41719B19E00CC4668 /* LabelCell.m */; };
+		A762A2091719B19E00CC4668 /* MXNActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F61719B19E00CC4668 /* MXNActionSheetCell.m */; };
+		A762A20A1719B19E00CC4668 /* MXNButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F81719B19E00CC4668 /* MXNButtonCell.m */; };
+		A762A20B1719B19E00CC4668 /* MXNCheckedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1FA1719B19E00CC4668 /* MXNCheckedCell.m */; };
+		A762A20C1719B19E00CC4668 /* TextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1FC1719B19E00CC4668 /* TextFieldCell.m */; };
+		A762A20D1719B19E00CC4668 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1FE1719B19E00CC4668 /* PageViewController.m */; };
+		A762A20E1719B19E00CC4668 /* UINavigationBar+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A2011719B19E00CC4668 /* UINavigationBar+Background.m */; };
+		A762A2131719B66500CC4668 /* FBLMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A762A2111719B66500CC4668 /* FBLMainView.xib */; };
+		A762A21A1719BDCB00CC4668 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A2191719BDCB00CC4668 /* Icon.png */; };
+		A762A21C1719BDD200CC4668 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A21B1719BDD200CC4668 /* Icon@2x.png */; };
+		A762A21F1719BEB500CC4668 /* NavBarLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A21D1719BEB500CC4668 /* NavBarLandscape.png */; };
+		A762A2201719BEB500CC4668 /* NavBarLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A21E1719BEB500CC4668 /* NavBarLandscape@2x.png */; };
+		A762A2231719C17800CC4668 /* loginTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A2211719C17800CC4668 /* loginTexture.png */; };
+		A762A2241719C17800CC4668 /* loginTexture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A762A2221719C17800CC4668 /* loginTexture@2x.png */; };
+		A7D0A99B1719AF0C00ABF309 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D0A99A1719AF0C00ABF309 /* UIKit.framework */; };
+		A7D0A99D1719AF0C00ABF309 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D0A99C1719AF0C00ABF309 /* Foundation.framework */; };
+		A7D0A99F1719AF0C00ABF309 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D0A99E1719AF0C00ABF309 /* CoreGraphics.framework */; };
+		A7D0A9A51719AF0C00ABF309 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9A31719AF0C00ABF309 /* InfoPlist.strings */; };
+		A7D0A9A71719AF0C00ABF309 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0A9A61719AF0C00ABF309 /* main.m */; };
+		A7D0A9AB1719AF0C00ABF309 /* FBLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0A9AA1719AF0C00ABF309 /* FBLAppDelegate.m */; };
+		A7D0A9AD1719AF0C00ABF309 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9AC1719AF0C00ABF309 /* Default.png */; };
+		A7D0A9AF1719AF0C00ABF309 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9AE1719AF0C00ABF309 /* Default@2x.png */; };
+		A7D0A9B11719AF0C00ABF309 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9B01719AF0C00ABF309 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A2D8DAB132445B4AD552F0F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		98EC2BDA6D404762B6D3077C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A762A1DD1719B12C00CC4668 /* FBLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLMainViewController.h; path = ViewControllers/FBLMainViewController.h; sourceTree = "<group>"; };
+		A762A1DE1719B12C00CC4668 /* FBLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLMainViewController.m; path = ViewControllers/FBLMainViewController.m; sourceTree = "<group>"; };
+		A762A1E21719B19E00CC4668 /* MXNModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNModel.h; sourceTree = "<group>"; };
+		A762A1E31719B19E00CC4668 /* MXNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNModel.m; sourceTree = "<group>"; };
+		A762A1E41719B19E00CC4668 /* MXNLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNLoginRequest.h; sourceTree = "<group>"; };
+		A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNLoginRequest.m; sourceTree = "<group>"; };
+		A762A1E61719B19E00CC4668 /* MXNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNUser.h; sourceTree = "<group>"; };
+		A762A1E71719B19E00CC4668 /* MXNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNUser.m; sourceTree = "<group>"; };
+		A762A1EA1719B19E00CC4668 /* MXNBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNBaseService.h; sourceTree = "<group>"; };
+		A762A1EB1719B19E00CC4668 /* MXNBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNBaseService.m; sourceTree = "<group>"; };
+		A762A1EC1719B19E00CC4668 /* MXNLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNLoginService.h; sourceTree = "<group>"; };
+		A762A1ED1719B19E00CC4668 /* MXNLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNLoginService.m; sourceTree = "<group>"; };
+		A762A1F01719B19E00CC4668 /* PageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCell.h; sourceTree = "<group>"; };
+		A762A1F11719B19E00CC4668 /* PageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCell.m; sourceTree = "<group>"; };
+		A762A1F31719B19E00CC4668 /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
+		A762A1F41719B19E00CC4668 /* LabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
+		A762A1F51719B19E00CC4668 /* MXNActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNActionSheetCell.h; sourceTree = "<group>"; };
+		A762A1F61719B19E00CC4668 /* MXNActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNActionSheetCell.m; sourceTree = "<group>"; };
+		A762A1F71719B19E00CC4668 /* MXNButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNButtonCell.h; sourceTree = "<group>"; };
+		A762A1F81719B19E00CC4668 /* MXNButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNButtonCell.m; sourceTree = "<group>"; };
+		A762A1F91719B19E00CC4668 /* MXNCheckedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNCheckedCell.h; sourceTree = "<group>"; };
+		A762A1FA1719B19E00CC4668 /* MXNCheckedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNCheckedCell.m; sourceTree = "<group>"; };
+		A762A1FB1719B19E00CC4668 /* TextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldCell.h; sourceTree = "<group>"; };
+		A762A1FC1719B19E00CC4668 /* TextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldCell.m; sourceTree = "<group>"; };
+		A762A1FD1719B19E00CC4668 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		A762A1FE1719B19E00CC4668 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		A762A2001719B19E00CC4668 /* UINavigationBar+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Background.h"; sourceTree = "<group>"; };
+		A762A2011719B19E00CC4668 /* UINavigationBar+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Background.m"; sourceTree = "<group>"; };
+		A762A2121719B66500CC4668 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBLMainView.xib; sourceTree = "<group>"; };
+		A762A2191719BDCB00CC4668 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A762A21B1719BDD200CC4668 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A762A21D1719BEB500CC4668 /* NavBarLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarLandscape.png; sourceTree = "<group>"; };
+		A762A21E1719BEB500CC4668 /* NavBarLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarLandscape@2x.png"; sourceTree = "<group>"; };
+		A762A2211719C17800CC4668 /* loginTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginTexture.png; sourceTree = "<group>"; };
+		A762A2221719C17800CC4668 /* loginTexture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loginTexture@2x.png"; sourceTree = "<group>"; };
+		A7D0A9971719AF0C00ABF309 /* FBLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D0A99A1719AF0C00ABF309 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A7D0A99C1719AF0C00ABF309 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7D0A99E1719AF0C00ABF309 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A7D0A9A21719AF0C00ABF309 /* FBLogin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBLogin-Info.plist"; sourceTree = "<group>"; };
+		A7D0A9A41719AF0C00ABF309 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7D0A9A61719AF0C00ABF309 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7D0A9A81719AF0C00ABF309 /* FBLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBLogin-Prefix.pch"; sourceTree = "<group>"; };
+		A7D0A9A91719AF0C00ABF309 /* FBLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBLAppDelegate.h; sourceTree = "<group>"; };
+		A7D0A9AA1719AF0C00ABF309 /* FBLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBLAppDelegate.m; sourceTree = "<group>"; };
+		A7D0A9AC1719AF0C00ABF309 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A7D0A9AE1719AF0C00ABF309 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A7D0A9B01719AF0C00ABF309 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7D0A9941719AF0C00ABF309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D0A99B1719AF0C00ABF309 /* UIKit.framework in Frameworks */,
+				A7D0A99D1719AF0C00ABF309 /* Foundation.framework in Frameworks */,
+				A7D0A99F1719AF0C00ABF309 /* CoreGraphics.framework in Frameworks */,
+				4D57867C2CA24BF9AC7EC105 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A762A1DC1719B10800CC4668 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1DD1719B12C00CC4668 /* FBLMainViewController.h */,
+				A762A1DE1719B12C00CC4668 /* FBLMainViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A762A1E01719B19E00CC4668 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1E11719B19E00CC4668 /* Common */,
+				A762A1E41719B19E00CC4668 /* MXNLoginRequest.h */,
+				A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */,
+				A762A1E61719B19E00CC4668 /* MXNUser.h */,
+				A762A1E71719B19E00CC4668 /* MXNUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A762A1E11719B19E00CC4668 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1E21719B19E00CC4668 /* MXNModel.h */,
+				A762A1E31719B19E00CC4668 /* MXNModel.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A762A1E81719B19E00CC4668 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1E91719B19E00CC4668 /* Common */,
+				A762A1EC1719B19E00CC4668 /* MXNLoginService.h */,
+				A762A1ED1719B19E00CC4668 /* MXNLoginService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A762A1E91719B19E00CC4668 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1EA1719B19E00CC4668 /* MXNBaseService.h */,
+				A762A1EB1719B19E00CC4668 /* MXNBaseService.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A762A1EE1719B19E00CC4668 /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1EF1719B19E00CC4668 /* PageView */,
+			);
+			path = Tableview;
+			sourceTree = "<group>";
+		};
+		A762A1EF1719B19E00CC4668 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1F01719B19E00CC4668 /* PageCell.h */,
+				A762A1F11719B19E00CC4668 /* PageCell.m */,
+				A762A1F21719B19E00CC4668 /* PageViewCells */,
+				A762A1FD1719B19E00CC4668 /* PageViewController.h */,
+				A762A1FE1719B19E00CC4668 /* PageViewController.m */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		A762A1F21719B19E00CC4668 /* PageViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A762A1F31719B19E00CC4668 /* LabelCell.h */,
+				A762A1F41719B19E00CC4668 /* LabelCell.m */,
+				A762A1F51719B19E00CC4668 /* MXNActionSheetCell.h */,
+				A762A1F61719B19E00CC4668 /* MXNActionSheetCell.m */,
+				A762A1F71719B19E00CC4668 /* MXNButtonCell.h */,
+				A762A1F81719B19E00CC4668 /* MXNButtonCell.m */,
+				A762A1F91719B19E00CC4668 /* MXNCheckedCell.h */,
+				A762A1FA1719B19E00CC4668 /* MXNCheckedCell.m */,
+				A762A1FB1719B19E00CC4668 /* TextFieldCell.h */,
+				A762A1FC1719B19E00CC4668 /* TextFieldCell.m */,
+			);
+			path = PageViewCells;
+			sourceTree = "<group>";
+		};
+		A762A1FF1719B19E00CC4668 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A762A2001719B19E00CC4668 /* UINavigationBar+Background.h */,
+				A762A2011719B19E00CC4668 /* UINavigationBar+Background.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A762A20F1719B50900CC4668 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A762A2141719BA5F00CC4668 /* Images */,
+				A762A2101719B51900CC4668 /* XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A762A2101719B51900CC4668 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A762A2111719B66500CC4668 /* FBLMainView.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		A762A2141719BA5F00CC4668 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A762A2211719C17800CC4668 /* loginTexture.png */,
+				A762A2221719C17800CC4668 /* loginTexture@2x.png */,
+				A762A21D1719BEB500CC4668 /* NavBarLandscape.png */,
+				A762A21E1719BEB500CC4668 /* NavBarLandscape@2x.png */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		A7D0A98E1719AF0C00ABF309 = {
+			isa = PBXGroup;
+			children = (
+				A762A21B1719BDD200CC4668 /* Icon@2x.png */,
+				A762A2191719BDCB00CC4668 /* Icon.png */,
+				A7D0A9A01719AF0C00ABF309 /* FacebookLogin */,
+				A7D0A9991719AF0C00ABF309 /* Frameworks */,
+				A7D0A9981719AF0C00ABF309 /* Products */,
+				8A2D8DAB132445B4AD552F0F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A7D0A9981719AF0C00ABF309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0A9971719AF0C00ABF309 /* FBLogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7D0A9991719AF0C00ABF309 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0A99A1719AF0C00ABF309 /* UIKit.framework */,
+				A7D0A99C1719AF0C00ABF309 /* Foundation.framework */,
+				A7D0A99E1719AF0C00ABF309 /* CoreGraphics.framework */,
+				98EC2BDA6D404762B6D3077C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7D0A9A01719AF0C00ABF309 /* FacebookLogin */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0A9A91719AF0C00ABF309 /* FBLAppDelegate.h */,
+				A7D0A9AA1719AF0C00ABF309 /* FBLAppDelegate.m */,
+				A762A1E01719B19E00CC4668 /* Models */,
+				A762A1E81719B19E00CC4668 /* Services */,
+				A762A1EE1719B19E00CC4668 /* Tableview */,
+				A762A1FF1719B19E00CC4668 /* Utilities */,
+				A762A20F1719B50900CC4668 /* Resources */,
+				A762A1DC1719B10800CC4668 /* ViewControllers */,
+				A7D0A9A11719AF0C00ABF309 /* Supporting Files */,
+			);
+			path = FacebookLogin;
+			sourceTree = "<group>";
+		};
+		A7D0A9A11719AF0C00ABF309 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7D0A9A21719AF0C00ABF309 /* FBLogin-Info.plist */,
+				A7D0A9A31719AF0C00ABF309 /* InfoPlist.strings */,
+				A7D0A9A61719AF0C00ABF309 /* main.m */,
+				A7D0A9A81719AF0C00ABF309 /* FBLogin-Prefix.pch */,
+				A7D0A9AC1719AF0C00ABF309 /* Default.png */,
+				A7D0A9AE1719AF0C00ABF309 /* Default@2x.png */,
+				A7D0A9B01719AF0C00ABF309 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7D0A9961719AF0C00ABF309 /* FBLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7D0A9B41719AF0C00ABF309 /* Build configuration list for PBXNativeTarget "FBLogin" */;
+			buildPhases = (
+				A7D0A9931719AF0C00ABF309 /* Sources */,
+				A7D0A9941719AF0C00ABF309 /* Frameworks */,
+				A7D0A9951719AF0C00ABF309 /* Resources */,
+				977DB6F2BB9D449380BC1448 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBLogin;
+			productName = FacebookLogin;
+			productReference = A7D0A9971719AF0C00ABF309 /* FBLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7D0A98F1719AF0C00ABF309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FBL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Mixin Mobile, LLC";
+			};
+			buildConfigurationList = A7D0A9921719AF0C00ABF309 /* Build configuration list for PBXProject "FBLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7D0A98E1719AF0C00ABF309;
+			productRefGroup = A7D0A9981719AF0C00ABF309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7D0A9961719AF0C00ABF309 /* FBLogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7D0A9951719AF0C00ABF309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D0A9A51719AF0C00ABF309 /* InfoPlist.strings in Resources */,
+				A7D0A9AD1719AF0C00ABF309 /* Default.png in Resources */,
+				A7D0A9AF1719AF0C00ABF309 /* Default@2x.png in Resources */,
+				A7D0A9B11719AF0C00ABF309 /* Default-568h@2x.png in Resources */,
+				A762A2131719B66500CC4668 /* FBLMainView.xib in Resources */,
+				A762A21A1719BDCB00CC4668 /* Icon.png in Resources */,
+				A762A21C1719BDD200CC4668 /* Icon@2x.png in Resources */,
+				A762A21F1719BEB500CC4668 /* NavBarLandscape.png in Resources */,
+				A762A2201719BEB500CC4668 /* NavBarLandscape@2x.png in Resources */,
+				A762A2231719C17800CC4668 /* loginTexture.png in Resources */,
+				A762A2241719C17800CC4668 /* loginTexture@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		977DB6F2BB9D449380BC1448 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7D0A9931719AF0C00ABF309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7D0A9A71719AF0C00ABF309 /* main.m in Sources */,
+				A7D0A9AB1719AF0C00ABF309 /* FBLAppDelegate.m in Sources */,
+				A762A1DF1719B12C00CC4668 /* FBLMainViewController.m in Sources */,
+				A762A2021719B19E00CC4668 /* MXNModel.m in Sources */,
+				A762A2031719B19E00CC4668 /* MXNLoginRequest.m in Sources */,
+				A762A2041719B19E00CC4668 /* MXNUser.m in Sources */,
+				A762A2051719B19E00CC4668 /* MXNBaseService.m in Sources */,
+				A762A2061719B19E00CC4668 /* MXNLoginService.m in Sources */,
+				A762A2071719B19E00CC4668 /* PageCell.m in Sources */,
+				A762A2081719B19E00CC4668 /* LabelCell.m in Sources */,
+				A762A2091719B19E00CC4668 /* MXNActionSheetCell.m in Sources */,
+				A762A20A1719B19E00CC4668 /* MXNButtonCell.m in Sources */,
+				A762A20B1719B19E00CC4668 /* MXNCheckedCell.m in Sources */,
+				A762A20C1719B19E00CC4668 /* TextFieldCell.m in Sources */,
+				A762A20D1719B19E00CC4668 /* PageViewController.m in Sources */,
+				A762A20E1719B19E00CC4668 /* UINavigationBar+Background.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A762A2111719B66500CC4668 /* FBLMainView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A762A2121719B66500CC4668 /* en */,
+			);
+			name = FBLMainView.xib;
+			sourceTree = "<group>";
+		};
+		A7D0A9A31719AF0C00ABF309 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7D0A9A41719AF0C00ABF309 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7D0A9B21719AF0C00ABF309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A7D0A9B31719AF0C00ABF309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7D0A9B51719AF0C00ABF309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2D8DAB132445B4AD552F0F /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookLogin/FBLogin-Prefix.pch";
+				INFOPLIST_FILE = "FacebookLogin/FBLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = FBLogin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A7D0A9B61719AF0C00ABF309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2D8DAB132445B4AD552F0F /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FacebookLogin/FBLogin-Prefix.pch";
+				INFOPLIST_FILE = "FacebookLogin/FBLogin-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = FBLogin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7D0A9921719AF0C00ABF309 /* Build configuration list for PBXProject "FBLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D0A9B21719AF0C00ABF309 /* Debug */,
+				A7D0A9B31719AF0C00ABF309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D0A9B41719AF0C00ABF309 /* Build configuration list for PBXNativeTarget "FBLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D0A9B51719AF0C00ABF309 /* Debug */,
+				A7D0A9B61719AF0C00ABF309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7D0A98F1719AF0C00ABF309 /* Project object */;
+}
