@@ -8,15 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-#import "MXNUser.h"
-#import "MXNLoginRequest.h"
+#import "FBLUser.h"
 #import "MXNBaseService.h"
 
-typedef void(^usercallback_t)(MXNUser *user, NSError *error);
+typedef void(^usercallback_t)(FBLUser *user, NSError *error);
 
-@interface MXNLoginService : MXNBaseService
+@interface FBLLoginService : MXNBaseService
 
 - (void)logout:(messagecallback_t)callback;
-- (void)login:(MXNLoginRequest *)request callback:(usercallback_t)callback;
+- (void)loginWithFacebook:(NSString *)authToken callback:(usercallback_t)callback;
 
 @end

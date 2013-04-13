@@ -1,7 +1,8 @@
 class UserController < ApplicationController
 
+  respond_to :xml, :json
   #Filters
-  before_filter :require_no_user, :only => [:create]
+  before_filter :require_no_user, :only => [ :create, :facebook_login ]
   before_filter :require_user, :only => [:show, :destroy, :update]
 
   def show
@@ -64,6 +65,7 @@ class UserController < ApplicationController
             :password => pwd,
             :password_confirmation => pwd
           })
+
         if user[:status] == nil
           respond_with user, :except => User.ignored_attributes
         else
@@ -77,7 +79,7 @@ class UserController < ApplicationController
     @current_user = User.new(params)
 
     if @current_user.save
-      @current_user_session = UserSession.new(params[:user])
+      @current_user_session = UserSession.new(@current_user)
       @current_user_session.remember_me = true
       @current_user_session.save
 

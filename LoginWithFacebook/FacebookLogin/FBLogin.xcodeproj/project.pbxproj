@@ -10,10 +10,9 @@
 		4D57867C2CA24BF9AC7EC105 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EC2BDA6D404762B6D3077C /* libPods.a */; };
 		A762A1DF1719B12C00CC4668 /* FBLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1DE1719B12C00CC4668 /* FBLMainViewController.m */; };
 		A762A2021719B19E00CC4668 /* MXNModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E31719B19E00CC4668 /* MXNModel.m */; };
-		A762A2031719B19E00CC4668 /* MXNLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */; };
-		A762A2041719B19E00CC4668 /* MXNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E71719B19E00CC4668 /* MXNUser.m */; };
+		A762A2041719B19E00CC4668 /* FBLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1E71719B19E00CC4668 /* FBLUser.m */; };
 		A762A2051719B19E00CC4668 /* MXNBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1EB1719B19E00CC4668 /* MXNBaseService.m */; };
-		A762A2061719B19E00CC4668 /* MXNLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1ED1719B19E00CC4668 /* MXNLoginService.m */; };
+		A762A2061719B19E00CC4668 /* FBLLoginService.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1ED1719B19E00CC4668 /* FBLLoginService.m */; };
 		A762A2071719B19E00CC4668 /* PageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F11719B19E00CC4668 /* PageCell.m */; };
 		A762A2081719B19E00CC4668 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F41719B19E00CC4668 /* LabelCell.m */; };
 		A762A2091719B19E00CC4668 /* MXNActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A762A1F61719B19E00CC4668 /* MXNActionSheetCell.m */; };
@@ -38,6 +37,7 @@
 		A7D0A9AD1719AF0C00ABF309 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9AC1719AF0C00ABF309 /* Default.png */; };
 		A7D0A9AF1719AF0C00ABF309 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9AE1719AF0C00ABF309 /* Default@2x.png */; };
 		A7D0A9B11719AF0C00ABF309 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7D0A9B01719AF0C00ABF309 /* Default-568h@2x.png */; };
+		A7EB343C1719C9CF006815D6 /* MXNValueLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7EB343B1719C9CF006815D6 /* MXNValueLabelCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,14 +47,12 @@
 		A762A1DE1719B12C00CC4668 /* FBLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLMainViewController.m; path = ViewControllers/FBLMainViewController.m; sourceTree = "<group>"; };
 		A762A1E21719B19E00CC4668 /* MXNModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNModel.h; sourceTree = "<group>"; };
 		A762A1E31719B19E00CC4668 /* MXNModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNModel.m; sourceTree = "<group>"; };
-		A762A1E41719B19E00CC4668 /* MXNLoginRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNLoginRequest.h; sourceTree = "<group>"; };
-		A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNLoginRequest.m; sourceTree = "<group>"; };
-		A762A1E61719B19E00CC4668 /* MXNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNUser.h; sourceTree = "<group>"; };
-		A762A1E71719B19E00CC4668 /* MXNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNUser.m; sourceTree = "<group>"; };
+		A762A1E61719B19E00CC4668 /* FBLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLUser.h; sourceTree = "<group>"; };
+		A762A1E71719B19E00CC4668 /* FBLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLUser.m; sourceTree = "<group>"; };
 		A762A1EA1719B19E00CC4668 /* MXNBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNBaseService.h; sourceTree = "<group>"; };
 		A762A1EB1719B19E00CC4668 /* MXNBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNBaseService.m; sourceTree = "<group>"; };
-		A762A1EC1719B19E00CC4668 /* MXNLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNLoginService.h; sourceTree = "<group>"; };
-		A762A1ED1719B19E00CC4668 /* MXNLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNLoginService.m; sourceTree = "<group>"; };
+		A762A1EC1719B19E00CC4668 /* FBLLoginService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLLoginService.h; sourceTree = "<group>"; };
+		A762A1ED1719B19E00CC4668 /* FBLLoginService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLLoginService.m; sourceTree = "<group>"; };
 		A762A1F01719B19E00CC4668 /* PageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageCell.h; sourceTree = "<group>"; };
 		A762A1F11719B19E00CC4668 /* PageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageCell.m; sourceTree = "<group>"; };
 		A762A1F31719B19E00CC4668 /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
@@ -91,6 +89,8 @@
 		A7D0A9AC1719AF0C00ABF309 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A7D0A9AE1719AF0C00ABF309 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A7D0A9B01719AF0C00ABF309 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A7EB343A1719C9CF006815D6 /* MXNValueLabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXNValueLabelCell.h; sourceTree = "<group>"; };
+		A7EB343B1719C9CF006815D6 /* MXNValueLabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXNValueLabelCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,10 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				A762A1E11719B19E00CC4668 /* Common */,
-				A762A1E41719B19E00CC4668 /* MXNLoginRequest.h */,
-				A762A1E51719B19E00CC4668 /* MXNLoginRequest.m */,
-				A762A1E61719B19E00CC4668 /* MXNUser.h */,
-				A762A1E71719B19E00CC4668 /* MXNUser.m */,
+				A762A1E61719B19E00CC4668 /* FBLUser.h */,
+				A762A1E71719B19E00CC4668 /* FBLUser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -142,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				A762A1E91719B19E00CC4668 /* Common */,
-				A762A1EC1719B19E00CC4668 /* MXNLoginService.h */,
-				A762A1ED1719B19E00CC4668 /* MXNLoginService.m */,
+				A762A1EC1719B19E00CC4668 /* FBLLoginService.h */,
+				A762A1ED1719B19E00CC4668 /* FBLLoginService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -180,6 +178,8 @@
 		A762A1F21719B19E00CC4668 /* PageViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				A7EB343A1719C9CF006815D6 /* MXNValueLabelCell.h */,
+				A7EB343B1719C9CF006815D6 /* MXNValueLabelCell.m */,
 				A762A1F31719B19E00CC4668 /* LabelCell.h */,
 				A762A1F41719B19E00CC4668 /* LabelCell.m */,
 				A762A1F51719B19E00CC4668 /* MXNActionSheetCell.h */,
@@ -388,10 +388,9 @@
 				A7D0A9AB1719AF0C00ABF309 /* FBLAppDelegate.m in Sources */,
 				A762A1DF1719B12C00CC4668 /* FBLMainViewController.m in Sources */,
 				A762A2021719B19E00CC4668 /* MXNModel.m in Sources */,
-				A762A2031719B19E00CC4668 /* MXNLoginRequest.m in Sources */,
-				A762A2041719B19E00CC4668 /* MXNUser.m in Sources */,
+				A762A2041719B19E00CC4668 /* FBLUser.m in Sources */,
 				A762A2051719B19E00CC4668 /* MXNBaseService.m in Sources */,
-				A762A2061719B19E00CC4668 /* MXNLoginService.m in Sources */,
+				A762A2061719B19E00CC4668 /* FBLLoginService.m in Sources */,
 				A762A2071719B19E00CC4668 /* PageCell.m in Sources */,
 				A762A2081719B19E00CC4668 /* LabelCell.m in Sources */,
 				A762A2091719B19E00CC4668 /* MXNActionSheetCell.m in Sources */,
@@ -400,6 +399,7 @@
 				A762A20C1719B19E00CC4668 /* TextFieldCell.m in Sources */,
 				A762A20D1719B19E00CC4668 /* PageViewController.m in Sources */,
 				A762A20E1719B19E00CC4668 /* UINavigationBar+Background.m in Sources */,
+				A7EB343C1719C9CF006815D6 /* MXNValueLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Mixin Mobile, LLC. All rights reserved.
 //
 
-#import "MXNUser.h"
+#import "FBLUser.h"
 
-@implementation MXNUser
+@implementation FBLUser
 @synthesize email;
 
 + (DCParserConfiguration *)configuration {
@@ -17,8 +17,8 @@
   // See: https://github.com/dchohfi/KeyValueObjectMapping
   
   DCParserConfiguration *userConfig = [DCParserConfiguration configuration];
-  [userConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"email" toAttribute:@"email" onClass:[MXNUser class]]];
-  [userConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"firstname" toAttribute:@"firstname" onClass:[MXNUser class]]];
+  [userConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"email" toAttribute:@"email" onClass:[FBLUser class]]];
+  [userConfig addObjectMapping:[DCObjectMapping mapKeyPath:@"firstname" toAttribute:@"firstname" onClass:[FBLUser class]]];
   return userConfig;
 }
 @end

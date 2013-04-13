@@ -12,4 +12,12 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (FBLAppDelegate *)appDelegate;
+
++ (void)showProgressIndicator:(NSString *)labelText;
++ (void)showProgressIndicator:(NSString *)labelText withCenter:(CGPoint)center;
++ (void)showProgressIndicator;
++ (void)hideProgressIndicator;
++ (void)hideProgressIndicatorAfterDelay:(NSTimeInterval)delay;
+
 @end

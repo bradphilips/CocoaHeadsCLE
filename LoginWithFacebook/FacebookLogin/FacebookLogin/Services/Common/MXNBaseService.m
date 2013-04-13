@@ -11,7 +11,7 @@
 #import "JSONKit.h"
 #import "AFJSONRequestOperation.h"
 
-#define kBaseURL @"localhost:3000"
+#define kBaseURL @"http://localhost:3000/api/v1/"
 
 @implementation MXNBaseService
 
@@ -21,6 +21,7 @@
                                    payload:(MXNModel *)payload {
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self posURLWithParameters:parameters forResource:resource]];
   request.HTTPMethod = method;
+  [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
   [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
   if (payload) {
     request.HTTPBody = [[payload serialize] JSONData];

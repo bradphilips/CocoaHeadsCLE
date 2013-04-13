@@ -10,7 +10,7 @@
 
 #import "MXNModel.h"
 
-@interface MXNUser : MXNModel
+@interface FBLUser : MXNModel
 
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *firstname;

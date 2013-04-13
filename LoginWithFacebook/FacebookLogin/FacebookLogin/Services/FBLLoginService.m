@@ -6,35 +6,28 @@
 //  Copyright (c) 2013 Mixin Mobile, LLC. All rights reserved.
 //
 
-#import "MXNLoginService.h"
+#import "FBLLoginService.h"
 
-@implementation MXNLoginService
+@implementation FBLLoginService
 
-- (void)login:(MXNLoginRequest *)loginRequest callback:(usercallback_t)callback {
-  NSURLRequest *request = [self createRequestForResource:@"/session"
+- (void)loginWithFacebook:(NSString *)authToken callback:(usercallback_t)callback {
+  NSURLRequest *request = [self createRequestForResource:@"user/facebook/login"
                                                   method:@"POST"
-                                              parameters:nil
-                                                 payload:loginRequest];
+                                              parameters:@{ @"access_token": authToken }
+                                                 payload:nil];
   [self makeJSONRequest:request callback:^(id JSON, NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
     if (error) {
-      NSError *visibleError = error;
-      if (response.statusCode == 401) {
-        visibleError = [NSError errorWithDomain:@"MXNServiceDomain"
-                                          code:response.statusCode
-                                      userInfo:@{NSLocalizedDescriptionKey: @"Invalid credentials." }];
-      }
-      
-      callback(nil, visibleError);
+      callback(nil, error);
       return;
     }
     
-    MXNUser *user = [MXNUser deserialize:[JSON objectForKey:@"user"]];
+    FBLUser *user = [FBLUser deserialize:JSON];
     callback(user, nil);
   }];
 }
 
 - (void)logout:(messagecallback_t)callback {
-  NSURLRequest *request = [self createRequestForResource:@"/session"
+  NSURLRequest *request = [self createRequestForResource:@"user/session"
                                                   method:@"DELETE"
                                               parameters:nil
                                                  payload:nil];

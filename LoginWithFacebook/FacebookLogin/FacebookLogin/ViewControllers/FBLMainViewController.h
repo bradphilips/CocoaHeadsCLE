@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PageViewController.h"
 
-@interface FBLMainViewController : UIViewController
+@interface FBLMainViewController : PageViewController
 
 @end
