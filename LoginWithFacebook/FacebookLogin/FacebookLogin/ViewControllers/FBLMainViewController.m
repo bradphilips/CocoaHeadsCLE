@@ -41,11 +41,11 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  _fbLoginView.delegate = self;
   NSArray *permissions = @[ @"email" ]; // Extra permissions you need on top of basic profile
   _fbLoginView.readPermissions = permissions;
   _fbLoginView.publishPermissions = permissions;
   _fbLoginView.defaultAudience = FBSessionDefaultAudienceFriends;
+  _fbLoginView.delegate = self;
   
   [self setTableView:_profileTable];
 }
