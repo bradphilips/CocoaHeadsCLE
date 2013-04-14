@@ -50,11 +50,13 @@ class UserController < ApplicationController
       if @current_user_session.save
         respond_with @current_user, :except => User.ignored_attributes
       else
-        respond_with({ :status => "ERROR", :message => "There was an error logging into your account." }, :status => 401, :location => nil)
+        respond_with({ :status => "ERROR", :message => "There was an error logging into your account." },
+                     :status => 401, :location => nil)
       end
     else
       if User.find_by_email(fb_user["email"])
-        respond_with({ :status => "ERROR", :message => "Your email is already registered.  Please login." }, :status => 401, :location => nil)
+        respond_with({ :status => "ERROR", :message => "Your email is already registered.  Please login." },
+                     :status => 401, :location => nil)
       else
         # Create a new user with their fb profile
         pwd = Digest::SHA1.hexdigest("#{fb_user["first_name"]}.#{fb_user["last_name"]}")

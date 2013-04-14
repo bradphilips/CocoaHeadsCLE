@@ -43,8 +43,6 @@
   [super viewDidLoad];
   NSArray *permissions = @[ @"email" ]; // Extra permissions you need on top of basic profile
   _fbLoginView.readPermissions = permissions;
-  _fbLoginView.publishPermissions = permissions;
-  _fbLoginView.defaultAudience = FBSessionDefaultAudienceFriends;
   _fbLoginView.delegate = self;
   
   [self setTableView:_profileTable];
@@ -116,7 +114,8 @@
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id <FBGraphUser>)fbUser {
   FBLLoginService *loginService = [[FBLLoginService alloc] init];
   [FBLAppDelegate showProgressIndicator:@"Please wait..." withCenter:self.view.center];
-  [loginService loginWithFacebook:[FBSession activeSession].accessTokenData.accessToken callback:^(FBLUser *user, NSError *error) {
+  [loginService loginWithFacebook:[FBSession activeSession].accessTokenData.accessToken
+                         callback:^(FBLUser *user, NSError *error) {
     [FBLAppDelegate hideProgressIndicator];
     if (error) {
       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error"
@@ -125,6 +124,7 @@
                                             cancelButtonTitle:@"OK"
                                             otherButtonTitles:nil];
       [alert show];
+      // This will logout the user if we have a facebook session live...
       if ([[FBSession activeSession] isOpen]) {
         [[FBSession activeSession] closeAndClearTokenInformation];
       }
@@ -149,17 +149,6 @@
   [FBLAppDelegate showProgressIndicator:@"Please wait..." withCenter:self.view.center];
   [loginService logout:^(NSString *message, NSError *error) {
     [FBLAppDelegate hideProgressIndicator];
-    NSString *userMessage = message;
-    if (error) {
-      userMessage = error.localizedDescription;
-    }
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Logged Out"
-                                                    message:userMessage
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
     _fbUser = nil;
     [self refreshData];
   }];
