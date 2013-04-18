@@ -15,7 +15,10 @@ typedef void(^usercallback_t)(FBLUser *user, NSError *error);
 
 @interface FBLLoginService : MXNBaseService
 
+- (void)getUserProfile:(usercallback_t)callback;
 - (void)logout:(messagecallback_t)callback;
 - (void)loginWithFacebook:(NSString *)authToken callback:(usercallback_t)callback;
+
+@property (nonatomic, readonly, getter = isLoggedIn) BOOL isLoggedIn;
 
 @end

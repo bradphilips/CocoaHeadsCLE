@@ -73,27 +73,27 @@
                    cellClass:[MXNValueLabelCell class]
                     cellData:
      @{ @"detailText": @"Success",
-        @"detailAlign": @(UITextAlignmentCenter),
-        @"detailTextColor": [UIColor whiteColor],
-        @"text": @"status"
+     @"detailAlign": @(UITextAlignmentCenter),
+     @"detailTextColor": [UIColor whiteColor],
+     @"text": @"status"
      }
                withAnimation:UITableViewRowAnimationTop];
     [self appendRowToSection:0
                    cellClass:[MXNValueLabelCell class]
                     cellData:
      @{ @"detailText": _fbUser.email,
-        @"detailAlign": @(UITextAlignmentCenter),
-        @"detailTextColor": [UIColor whiteColor],
-        @"text": @"email"
+     @"detailAlign": @(UITextAlignmentCenter),
+     @"detailTextColor": [UIColor whiteColor],
+     @"text": @"email"
      }
                withAnimation:UITableViewRowAnimationTop];
     [self appendRowToSection:0
                    cellClass:[MXNValueLabelCell class]
                     cellData:
      @{ @"detailText": _fbUser.firstname,
-        @"detailAlign": @(UITextAlignmentCenter),
-        @"detailTextColor": [UIColor whiteColor],
-        @"text": @"name"
+     @"detailAlign": @(UITextAlignmentCenter),
+     @"detailTextColor": [UIColor whiteColor],
+     @"text": @"name"
      }
                withAnimation:UITableViewRowAnimationTop];
   } else {
@@ -101,9 +101,9 @@
                    cellClass:[MXNValueLabelCell class]
                     cellData:
      @{ @"detailText": @"Not logged in",
-        @"detailAlign": @(UITextAlignmentCenter),
-        @"detailTextColor": [UIColor whiteColor],
-        @"text": @"status"
+     @"detailAlign": @(UITextAlignmentCenter),
+     @"detailTextColor": [UIColor whiteColor],
+     @"text": @"status"
      }
                withAnimation:UITableViewRowAnimationTop];
   }
@@ -114,8 +114,7 @@
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id <FBGraphUser>)fbUser {
   FBLLoginService *loginService = [[FBLLoginService alloc] init];
   [FBLAppDelegate showProgressIndicator:@"Please wait..." withCenter:self.view.center];
-  [loginService loginWithFacebook:[FBSession activeSession].accessTokenData.accessToken
-                         callback:^(FBLUser *user, NSError *error) {
+  usercallback_t callback = ^(FBLUser *user, NSError *error) {
     [FBLAppDelegate hideProgressIndicator];
     if (error) {
       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Login Error"
@@ -133,14 +132,17 @@
     
     _fbUser = user;
     [self refreshData];
-  }];
+  };
+  
+  if (loginService.isLoggedIn) { // Just pull the profile; we're already logged in...
+    [loginService getUserProfile:callback];
+  } else {
+    [loginService loginWithFacebook:[FBSession activeSession].accessTokenData.accessToken
+                           callback:callback];
+  }
 }
 
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
-  if (_fbUser == nil) { // User is not logged in yet...
-    return;
-  }
-  
   [self logoutUser];
 }
 
